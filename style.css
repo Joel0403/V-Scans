@@ -553,13 +553,13 @@ iframe{
 /* about us style */
 
 /* contact us style */
-/* .contact-us-banner{
+ .contact-us-banner{
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(184,1,189,0.96) 57%, rgba(0,212,255,1) 100%);
     width: 100%;
     height: 420px;
-} */
-/* .contact-us-banner-description{
+} 
+ .contact-us-banner-description{
     text-align: center;
 }
 .contact-us-banner-description h2 {
@@ -572,7 +572,7 @@ iframe{
     font-size:18px;
     color:#FFFFFF;
 
-} */
+} 
 
 .contact-us-form-group label{
     font-size: 17px;
