@@ -13,6 +13,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!-- bootstrap link -->
     <!-- css link -->
     <link rel="stylesheet" href="../style.css">
@@ -20,12 +22,100 @@
     <!-- css link -->
 </head>
 <body>
-<?php include('header2.php');?>
-    
-    <div class="banner">
-    
-    </div>
-<!-- Banner -->
+<!-- header -->
+<section class="navsec">
+  <header class="header1">
+      <div class="container-fluid topheader">
+          <div class="row align-items-center">
+              <div class="col-12 col-md-2 text-center text-md-left">
+                  <a href="../index.html"><img src="../Images/logo.jpg" class="img-fluid" alt="Logo"></a>
+              </div>
+              <div class="col-12 col-md-4 text-center my-2 my-md-0">
+                  <input type="search" placeholder="Search your test" class="form-control">
+              </div>
+              <div class="col-12 col-md-3 text-center text-md-right">
+                  <a href="tel:+917888030303" class="d-block d-md-inline-block"><i class="fa fa-phone"
+                          aria-hidden="true"></i> +91-78880 30303</a>
+              </div>
+              <div class="col-12 col-md-3 text-center text-md-right">
+                  <ul class="social-icons list-inline my-2 my-md-0">
+                      <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"
+                                  aria-hidden="true"></i></a></li>
+                      <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"
+                                  aria-hidden="true"></i></a></li>
+                      <li class="list-inline-item"><a href="#"><i class="fa fa-google-plus"
+                                  aria-hidden="true"></i></a></li>
+                      <li class="list-inline-item"><a href="#"><i class="fa fa-instagram"
+                                  aria-hidden="true"></i></a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </header>
+  <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container-fluid">
+          <a class="navbar-brand headerlogo" href="#">
+              <img src="../Images/logo.jpg" class="img-fluid" alt="logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav mx-auto gap-2">
+                  <li class="nav-item rounded">
+                      <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  <div class="nav-item dropdown">
+                      <button class="dropbtn nav-link dropdown-toggle">Services</button>
+                      <div class="dropdown-content">
+                          <div class="row">
+                              <div class="col-md-6 col-sm-12">
+                                  <a href="./01_1.5T_48CH_SIEMENS_MRISCAN.html">1.5T - 48CH SIEMENS MRI SCAN</a>
+                                  <a href="./02_128_Slice_Low_Dose_CTScan.html">128 Slice Low Dose CT Scan</a>
+                                  <a href="./03_5_BEAS_Coronary_Angiogram.html">5 BEAS CORONARY ANGIOGRAM</a>
+                                  <a href="./04_4D_ultrasound_Scan.html">4D Ultrasound Scan</a>
+                                  <a href="./05_Ultrasound_Elastography.html">Ultrasound Elastography</a>
+                              </div>
+                              <div class="col-md-6 col-sm-12">
+                                <a href="./06_Color_Doppler.html">Color Doppler</a>
+                                  <a href="./07_Pregnancy_Scan.html">Pregnancy Scan</a>
+                                  <a href="./08_Digital_mamogram.html">Digital Mammogram</a>
+                                  <a href="./09_digital_xray.html">DIGITAL X-RAY</a>
+                                  
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <li class="nav-item rounded">
+                      <a class="nav-link" href="./packages.html">Package</a>
+                  </li>
+                  <li class="nav-item rounded">
+                      <a class="nav-link" href="./gallery.html">Gallery</a>
+                  </li>
+                  <li class="nav-item rounded">
+                      <a class="nav-link" href="./about_us.html">About Us</a>
+                  </li>
+                  <li class="nav-item rounded">
+                      <a class="nav-link" href="./contact_us.html">Contact Us</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+</section>
+<!-- header -->
+ 
+<div class="about-us-banner">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-12 col-sm-12 col-xs-12">
+              <h2 class="about-us-banner-description">4D Ultra Sound Scan </h2>
+          </div>
+      </div>
+  </div>
+</div>
 
 <!-- section 1 -->
 <div class="container padding-top-bottom-sec">
@@ -127,9 +217,75 @@
 <!-- section 3 -->
 
 
-<!-- section 4 -->
-<?php include('footer.php');?>
-<!-- section 4 -->
+<!-- footer -->
+<section class="address-panel-section">
+  <div class="container address-panel-row">
+
+    <div class="row address-row">
+      <div class="col-lg-4 col-sm-4 col-xs-12">
+        <div class="address-panel">
+        <i class="fa fa-map-marker" aria-hidden="true"></i>
+          <div class="adddress">
+          <p class="mb-0">Our Address</p>
+          <h4>3, Dr MGR Salai, Near Palmgroove Hotel, Tirumurthy Nagar, Nungambakkam, Chennai, Tamil Nadu 600034</h4>
+        </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-sm-4 col-xs-12">
+        <div class="call-panel">
+          <i class="fa fa-phone" aria-hidden="true"></i>
+          <div class="adddress">
+          <p class="mb-0">Call</p>
+          <a href="tel:+917888030303"><h4>+91- 78880 30303</h4></a>
+        </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-sm-4 col-xs-12">
+        <div class="mail-panel">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          <div class="adddress">
+          <p class="mb-0">Our Mail</p>
+          <a href="mailto:info@vscansandlabs.com"><h4>info@vscansandlabs.com</h4></a>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="container">
+    <div class="row mt-3">
+
+      <div class="col-lg-3 col-sm-12 col-xs-12">
+        <div class="footer-col-1">
+          <a href="./index.html"><img src="./Images/vscans_logo_png.png" alt="" class="img-fluid" ></a>
+          <p class="text-left">Lorem ipsum dolor sit amet, <br>consect etuer adipiscing elit, sed<br>diam nonu mmy nibh euis</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-sm-12 col-xs-12 mt-3">
+          <ul class="footer-col-2">
+            <a href="./index.html"><li>Home</li></a>
+            <a href="./index.html#exploreservices"><li>Services</li></a>
+            <a href="./Packages.html"><li>packages</li></a>
+            <a href="./Gallery.html"><li>Gallery</li></a>
+            <a href="./contact_us.html"><li>Contact Us</li></a>
+          </ul>
+      </div>
+
+      <div class="col-lg-6 col-sm-12 col-xs-12">
+        <div clas="footer-col-3">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.7301896087247!2d80.24600841147834!3d13.05283851303714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52674d5df2d857%3A0x407c10c153966889!2sV%20SCANS%20AND%20LABS!5e0!3m2!1sen!2sin!4v1710349713623!5m2!1sen!2sin" 
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- footer -->
 
 </body>
   <script>
