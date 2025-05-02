@@ -837,3 +837,185 @@ display: block;
         margin-top: 92px;
     }
 }
+
+/* Packages Page Styles */
+.package-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+    height: 100%;
+}
+
+.package-card:hover {
+    transform: translateY(-5px);
+}
+
+.package-header {
+    background-color: #2582A1;
+    color: white;
+    padding: 20px;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+}
+
+.package-header h3 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.package-price {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.package-content {
+    padding: 20px;
+    background-color: white;
+}
+
+.package-content p {
+    color: #444444;
+    margin-bottom: 20px;
+}
+
+.package-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.package-features li {
+    padding: 8px 0;
+    border-bottom: 1px solid #f0f0f0;
+    color: #666;
+}
+
+.package-features li:last-child {
+    border-bottom: none;
+}
+
+.package-features li i {
+    color: #2582A1;
+    margin-right: 10px;
+}
+
+.book-btn {
+    background-color: #D020B0;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.book-btn:hover {
+    background-color: #b01c96;
+}
+
+.category-title {
+    color: #2582A1;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.category-title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: #D020B0;
+}
+
+.package-section {
+    padding: 60px 0;
+    background-color: #F0F4F9;
+}
+
+.package-section-white {
+    padding: 60px 0;
+    background-color: white;
+}
+
+.intro-section {
+    padding: 60px 0;
+    background-color: white;
+}
+
+.intro-section h2 {
+    color: #444444;
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.intro-section p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.intro-section .intro-text {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.popular-badge {
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    background-color: #D020B0;
+    color: white;
+    padding: 5px 15px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.package-card-wrapper {
+    position: relative;
+    height: 100%;
+}
+
+/* Call to Action Section */
+.cta-section {
+    background-color: #2582A1;
+    padding: 60px 0;
+    color: white;
+}
+
+.cta-section h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.cta-section p {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.cta-button {
+    background-color: white;
+    color: #2582A1;
+    font-weight: 600;
+    padding: 12px 30px;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.cta-button:hover {
+    background-color: #f0f0f0;
+}

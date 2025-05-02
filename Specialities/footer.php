@@ -65,7 +65,7 @@
           <div class="col-lg-3 col-sm-12 col-xs-12">
             <div class="footer-col-1">
               <img src="../Images/vscans_logo_png.png" alt="" class="img-fluid" >
-              <p class="text-left">Lorem ipsum dolor sit amet, <br>consect etuer adipiscing elit, sed<br>diam nonu mmy nibh euis</p>
+              <p class = "text-left"> At VSCAN and Labs, we prioritize providing an elite atmosphere and ambiance at an affordable cost </p>
             </div>
           </div>
 
