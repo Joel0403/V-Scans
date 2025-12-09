@@ -41,9 +41,9 @@
 .margin-top-minus-50{
     margin-top: -100px !important;
 }
-.hp-sp_sec_inner {
+/* .hp-sp_sec_inner {
     position: relative;
-    min-height: 350px;
+    height: 400px;
     margin: 20px 0px;
 }
 .hp-sp_sec_inner img{
@@ -63,7 +63,55 @@
 .hp-sp_sec_content a{
     color : black;
     text-decoration: none;
+} */
+
+.hp-sp_sec_inner {
+    position: relative;
+    margin: 20px 0px;
+    height: 430px;                 /* same height for all cards */
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 6px;
 }
+
+.hp-sp_sec_inner img {
+    width: 100%;
+    height: 220px;                 /* uniform image height */
+    object-fit: cover;             /* crops image neatly */
+    border-radius: 6px 6px 0 0;
+}
+
+.hp-sp_sec_content {
+    padding: 20px;
+    flex: 1;                       /* fills remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.hp-sp_sec_content h5 {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.hp-sp_sec_content a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Responsive fix */
+@media (max-width: 576px) {
+    .hp-sp_sec_inner {
+        height: auto;
+    }
+
+    .hp-sp_sec_inner img {
+        height: 180px;
+    }
+}
+
 
 #slider .carousel-caption {
     left: 10%;
@@ -233,7 +281,7 @@
     box-shadow: rgba(0,0,0,0.1);
 }
 
-.client-testimonials-section-content h4{
+/* .client-testimonials-section-content h4{
     font-size: 18px;
     color: #2582A1;
 }
@@ -270,6 +318,142 @@
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 0px;
+} */
+
+
+/* ---------- Testimonials — equal height responsive cards ---------- */
+.client-testimonials-section-content h4{
+    font-size: 18px;
+    color: #2582A1;
+    margin: 0;
+}
+
+.client-testimonials-section-content h1,
+.client-testimonials-section-content h2{ /* handle either h1 or h2 */
+    font-size: 40px;
+    color:#091D3E;
+    margin-top: 12px;
+    margin-bottom: 8px;
+}
+
+/* Make the row children behave as equal-height columns */
+#testimonal_datas > .col-lg-4,
+#testimonal_datas > .col-sm-4,
+#testimonal_datas > .col-xs-12 {
+    display: flex;           /* allow the column to stretch */
+    align-items: stretch;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+
+/* Card container fills the column */
+.client-testimonal-card{
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 10px 20px, rgba(0, 0, 0, 0.06) 0px 6px 6px;
+    border-radius: 6px;
+    padding: 20px;
+    background: #fff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: transform .22s ease, box-shadow .22s ease;
+}
+
+/* subtle hover lift */
+.client-testimonal-card:hover{
+    transform: translateY(-6px);
+    box-shadow: rgba(0,0,0,0.18) 0px 18px 30px, rgba(0,0,0,0.08) 0px 8px 10px;
+}
+
+/* Top area with avatar, name & quote icon */
+.card-img-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    min-height: 120px;         /* keeps top area consistent */
+    box-sizing: border-box;
+}
+
+/* avatar size */
+.card-img-content img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+    background: #e9f3f6;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+/* name block */
+.testimonal_person_name{
+    color: #222222;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 0 4px 0;
+}
+
+/* small subtitle under name */
+.card-img-content > div p {
+    margin: 0;
+    color: #6b6b6b;
+    font-size: 13px;
+}
+
+/* quote icon alignment */
+.card-img-content span{
+    font-size: 26px;
+    color: #2582A1;
+    margin-left: 8px;
+    flex-shrink: 0;
+}
+
+/* main description — allow this to grow and keep bottom spacing consistent */
+.card-des{
+    font-size: 15px;
+    color: #091D3E;
+    margin-top: 16px;
+    line-height: 1.6;
+    flex: 1;                    /* makes this area stretch to keep cards same height */
+    width: 100%;
+}
+
+/* small responsive adjustments */
+@media (max-width: 992px) {
+    .client-testimonials-section-content h1,
+    .client-testimonials-section-content h2 { font-size: 34px; }
+    .card-img-content { min-height: 110px; }
+    .card-img-content img { width: 80px; height: 80px; }
+}
+
+@media (max-width: 576px) {
+    /* stack content nicely on very small screens */
+    #testimonal_datas > .col-lg-4,
+    #testimonal_datas > .col-sm-4,
+    #testimonal_datas > .col-xs-12 {
+        display: block;         /* columns become normal block flow on mobile */
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .client-testimonal-card{
+        padding: 16px;
+    }
+
+    .card-img-content{
+        display: flex;
+        gap: 10px;
+        min-height: auto;
+        align-items: flex-start;
+    }
+
+    .card-img-content img { width: 64px; height: 64px; }
+    .client-testimonials-section-content h1,
+    .client-testimonials-section-content h2 { font-size: 26px; }
+    .card-des { margin-top: 12px; font-size: 14px; }
 }
 
 .fa-quote-left{
